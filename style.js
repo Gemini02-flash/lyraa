@@ -51,6 +51,7 @@ const finalText = document.getElementById("finalText");
 const finalSignature = document.getElementById("finalSignature");
 const app = document.getElementById("app");
 const bgMusic = document.getElementById("bgMusic");
+const clickSound = document.getElementById("clickSound");
 const finalMessage = `130 days ago...
 
 I met someone
@@ -240,6 +241,12 @@ startBtn.textContent = "Open My Letter 💌";
 }
 }
 startBtn.addEventListener("click", () => {
+    clickSound.currentTime = 0;
+clickSound.play().catch(() => {});
+
+if (navigator.vibrate) {
+    navigator.vibrate(20);
+}
 
 if (bgMusic.paused) {
 
