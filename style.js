@@ -245,7 +245,7 @@ startBtn.addEventListener("click", () => {
 clickSound.play().catch(() => {});
 
 if (navigator.vibrate) {
-    navigator.vibrate(20);
+    navigator.vibrate(50);
 }
 
 if (bgMusic.paused) {
