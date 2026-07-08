@@ -97,15 +97,15 @@ and overthink a little less.💫
 
 Stay exactly the way you are.🌼
 
+🤍
+
 Aur haan...
 
-Skylaaa...😆
+Birthday privilege sirf aaj ke liye hai. 😌🎂
 
-Aaj birthday privilege hai.
+Kal se phir...
 
-Kal se...
-
-"Kyun nahi ho para kya?" 😂🎮`;
+"Kyun nahi ho para kya?" 😂`;
 function typeFinalMessage(text){
 
     finalText.textContent = "";
