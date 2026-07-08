@@ -1,0 +1,223 @@
+/* ==========================
+   Project Lyraa v2
+========================== */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --bg1:#050816;
+  --bg2:#0d1635;
+  --glass:rgba(255,255,255,.08);
+  --border:rgba(255,255,255,.15);
+  --text:#ffffff;
+  --accent:#7c9cff;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(circle at top,var(--bg2),var(--bg1) 65%);
+  overflow:hidden;
+}
+
+#loader{
+  position:fixed;
+  inset:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:var(--bg1);
+  z-index:999;
+}
+
+#app{
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:24px;
+}
+
+.scene{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.glass{
+  width:min(92%,420px);
+  padding:32px;
+  border-radius:24px;
+  background:var(--glass);
+  border:1px solid var(--border);
+  backdrop-filter:blur(18px);
+  text-align:center;
+}
+
+h1{
+  font-size:2.2rem;
+  margin-bottom:12px;
+}
+
+.subtitle{
+  opacity:.8;
+  margin-bottom:24px;
+}
+
+button{
+  border:none;
+  border-radius:999px;
+  padding:14px 28px;
+  font-size:1rem;
+  cursor:pointer;
+  display: inline-block;
+transform: scale(1);
+box-shadow: 0 10px 25px rgba(124,156,255,.25);
+background: linear-gradient(135deg,#7c9cff,#8f6fff);
+color:#fff;
+user-select: none;
+-webkit-tap-highlight-color: transparent;
+transition: transform .2s ease,
+            box-shadow .25s ease,
+            filter .25s ease;
+}
+
+button:active{
+    transform: scale(0.94);
+}
+button:hover{
+    filter: brightness(1.08);
+}
+#loader{
+    transition:opacity .5s ease;
+}
+#welcomeCard{
+    transition: transform .7s cubic-bezier(.22,1,.36,1),
+                opacity .7s ease;
+}
+
+#welcomeCard.hide{
+    opacity: 0;
+    transform: scale(.92) translateY(-20px);
+}
+#progress{
+    position:absolute;
+    top:18px;
+    right:20px;
+    font-size:.8rem;
+    color:rgba(255,255,255,.6);
+    letter-spacing:2px;
+    font-weight:600;
+}
+.fade-in{
+    animation: fadeIn .55s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(18px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.orb{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(70px);
+    opacity:.18;
+    z-index:-1;
+    animation:float 10s ease-in-out infinite;
+}
+
+.orb1{
+    width:220px;
+    height:220px;
+    background:#7c9cff;
+    top:-60px;
+    left:-40px;
+}
+
+.orb2{
+    width:260px;
+    height:260px;
+    background:#8f6fff;
+    bottom:-80px;
+    right:-60px;
+    animation-delay:5s;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-30px);
+    }
+}
+.text-pop{
+    animation:textPop .45s ease;
+}
+
+@keyframes textPop{
+    0%{
+        opacity:0;
+        transform:translateY(12px);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+#finalScene{
+    display:none;
+    opacity:0;
+    transition:opacity .8s ease;
+}
+
+#finalScene.show{
+    display:flex;
+    opacity:1;
+}
+#finalSignature{
+    display:none;
+    margin-top:25px;
+    opacity:0;
+    font-size:.95rem;
+    line-height:1.7;
+    font-style:italic;
+    transition:opacity .8s ease;
+}
+.typing{
+    white-space: pre-line;
+    line-height: 1.8;
+}
+#finalScene .glass{
+    max-height:80vh;
+    overflow-y:auto;
+    scrollbar-width:none;
+}
+
+#finalScene .glass{
+    max-height:80vh;
+    overflow-y:auto;
+    scrollbar-width:none;
+}
+
+#finalScene .glass::-webkit-scrollbar{
+    display:none;
+}
