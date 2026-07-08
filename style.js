@@ -169,12 +169,12 @@ subtitle.classList.add("text-pop");
 
     if(scene===2){
 
-        title.textContent = "💙 Today's Mission";
+        title.textContent = "🎂 Birthday Rules";
 
 subtitle.textContent =
-"Aaj ka mission simple hai...\n\n✔ Smile 😄\n✔ Enjoy 🥳\n✔ Overthinking ❌\n\nBas itna hi.";
+"Rule No.1\nSmile. 😊\n\nRule No.2\nEnjoy every moment. ✨\n\nRule No.3\nNo overthinking today. 😌";
 
-startBtn.textContent = "Mission Accepted 🚀";
+startBtn.textContent = "Deal! 🤝";
 
     }
 else if(scene===3){
@@ -190,12 +190,12 @@ startBtn.textContent = "Rematch 🎮";
 
 else if(scene===4){
 
-    title.textContent = "🃏 UNO Investigation";
+    title.textContent = "✨ Sometimes...";
 
-subtitle.textContent =
-"UNO ki history ke mutabik...\nHar baar haarne wali ek hi suspect mili hai... 👀";
+    subtitle.textContent =
+"Life has a funny way of surprising us.\n\nThe moments we never plan...\n\nusually become the ones we remember the most.";
 
-startBtn.textContent = "Objection! 😂";
+    startBtn.textContent = "Keep Going 🫣";
 
 }
 
