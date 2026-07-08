@@ -224,7 +224,7 @@ else if(scene===7){
     title.textContent = "☀️ Best Part";
 
 subtitle.textContent =
-"Saturday...\nSunday...\nAfternoon games...\nRandom bakchodi...\nAur wahi sabse accha part ban gaya. 🤍";
+"Saturday...\nSunday...\nAfternoon games...\nThe little moments...\nAur wahi sabse accha part ban gaya. 🤍";
 
 startBtn.textContent = "Last One ✨";
 
